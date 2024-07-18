@@ -4,6 +4,10 @@ body {
   margin: 0;
 }
 
+a {
+  colour: black;
+}
+
 h1 {
   font-family: "League Spartan", sans-serif;
 }
