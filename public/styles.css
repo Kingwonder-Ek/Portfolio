@@ -1,0 +1,290 @@
+body {
+  color: white;
+  padding-bottom: 2px;
+  margin: 0;
+}
+
+h1 {
+  font-family: "League Spartan", sans-serif;
+}
+
+h2 {
+  font-family: "League Spartan", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: white;
+   display: flex;
+   justify-content: space-between;
+   position: fixed;
+   align-items: center;
+   top: 0;
+   left: 0;
+   right: 0;
+   padding: 5px 30px 5px 40px;
+   z-index: 1;
+}
+
+.portfolio-image {
+  width: 135px;
+  height: 25px;
+}
+
+.right-section {
+  display: flex;
+  justify-content: space-between;
+  width: 70px;
+}
+
+.svg-div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.tool-tip {
+  opacity: 0;
+}
+
+.cv-div .tool-tip, .telephone-div .tool-tip {
+  background-color: #fbd49a;
+  color: black;
+  position: absolute;
+  padding: 2px;
+  font-size: 10px;
+  font-weight: 800;
+  bottom: -40px;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.cv-div:hover .tool-tip, .telephone-div:hover .tool-tip {
+  opacity: 1;
+}
+
+.svg {
+  width: 22px;
+  cursor: pointer;
+}
+
+.container-1 {
+  background: linear-gradient(270deg, #013635 65%, rgba(0,0,0,1) 100%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  padding: 80px 80px 80px 40px;
+  margin-top: 39px;
+}
+
+.text-container {
+  padding-right: 50px;
+}
+
+.profile-name {
+  font-size: 3rem;
+}
+
+.name {
+  color: #05a9a6;
+}
+
+.description {
+  font-size: 1.2rem;
+  font-family: "League Spartan", sans-serif;
+  line-height: 20px;
+}
+
+.developer-text {
+  font-size: 1.8rem;
+  animation-name: text-colour;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes text-colour {
+  from {color: #ffffff;}
+  to {color: #fbd49a;}
+}
+
+.reach-out-button {
+  font-family: "League Spartan", sans-serif;
+  background-color: #05a9a6;
+  padding: 6px 12px 6px 12px;
+  border: 0px solid;
+  font-size: 15px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.profile-pic {
+  width: 400px;
+  border-radius: 50%;
+}
+
+.container-2 {
+  background-color: white;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
+  padding: 10px 0px 8px 40px;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon {
+  cursor: pointer;
+  width: 25px;
+  align-items: center;
+}
+
+.facebook {
+  margin-top: -1px;
+  border-radius: 2px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+
+.copyright-text {
+  font-family: "League Spartan", sans-serif;
+  font-size: 12px;
+}
+
+@media (min-width: 1300px) {
+  
+  .right-section {
+    margin-right: 10px;
+    width: 90px;
+  }
+
+  .cv-div .tool-tip, .telephone-div .tool-tip {
+    background-color: #fbd49a;
+    color: black;
+    position: absolute;
+    padding: 2px;
+    font-size: 19px;
+    font-weight: 900;
+    bottom: -60px;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+
+  .portfolio-image {
+    width: 200px;
+    height: 40px;
+  }
+
+  .profile-name {
+    font-size: 5rem;
+  }
+
+  .developer-text {
+    font-size: 3rem;
+  }
+
+  .description {
+    font-size: 1.7rem;
+    line-height: 28px;
+  }
+
+  .profile-pic {
+    width: 600px;
+  }
+
+  .reach-out-button {
+  padding: 10px 12px 10px 12px;
+  border: 0px solid;
+  font-size: 25px;
+  }
+
+  .icon {
+    width: 35px;
+  }
+
+  .svg {
+    width: 30px;
+  }
+
+  .copyright-text {
+    font-size: 18px;
+  }
+
+}
+
+@media (max-width: 890px) {
+
+  .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header {
+    padding-left: 30px;
+  }
+
+  .container-1 {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile-pic {
+  width: 300px;
+  border-radius: 50%;
+  }
+
+
+}
+
+@media (max-width: 500px) {
+  .profile-pic {
+    width: 200px;
+    border-radius: 50%;
+    margin-left: 50px;
+  }
+
+
+  header {
+    padding: 5px 15px 5px 10px;
+  }
+
+  .profile-name {
+    font-size: 2.2rem;
+  }
+
+  .developer-text {
+    font-size: 1.3rem;
+  }
+
+  .portfolio-image {
+    width: 120px;
+    height: 25px;
+  }
+
+  .right-section {
+    width: 65px;
+  }
+
+  .copyright-text {
+    font-size: 10px
+  }
+
+}
